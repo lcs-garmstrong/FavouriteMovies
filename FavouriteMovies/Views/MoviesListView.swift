@@ -14,6 +14,9 @@ struct MoviesListView: View {
         try await Movie.read(from: db)
     }) var movies
     
+    // Is the interface to add a movie visible right now?
+    @State var showingAddMovieView = false
+    
     //MARK: Computed properties
     var body: some View {
         NavigationView {
@@ -21,6 +24,19 @@ struct MoviesListView: View {
                 MovieItemView(name: currentMovie.name, genre: currentMovie.genre, rating: currentMovie.rating)
             }
             .navigationTitle("Favourite Movies")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button(action: {
+                        showingAddMovieView = true
+                    }, label: {
+                        Image(systemName: "plus")
+                    })
+                    .sheet(isPresented: $showingAddMovieView) {
+                        AddMovieView()
+                            .presentationDetents([.fraction(0.3)])
+                    }
+                }
+            }
         }
     }
 }
