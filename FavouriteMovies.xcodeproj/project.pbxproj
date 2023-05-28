@@ -11,6 +11,7 @@
 		971FEA9C2A23CE39007B86F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971FEA9B2A23CE39007B86F5 /* Assets.xcassets */; };
 		971FEA9F2A23CE39007B86F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971FEA9E2A23CE39007B86F5 /* Preview Assets.xcassets */; };
 		971FEAA92A23CEB9007B86F5 /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971FEAA82A23CEB9007B86F5 /* MoviesListView.swift */; };
+		971FEAAD2A23D007007B86F5 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 971FEAAC2A23D007007B86F5 /* db.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		971FEA9B2A23CE39007B86F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		971FEA9E2A23CE39007B86F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		971FEAA82A23CEB9007B86F5 /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
+		971FEAAC2A23D007007B86F5 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		971FEAA62A23CE69007B86F5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				971FEAAC2A23D007007B86F5 /* db.sqlite */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				971FEA9F2A23CE39007B86F5 /* Preview Assets.xcassets in Resources */,
+				971FEAAD2A23D007007B86F5 /* db.sqlite in Resources */,
 				971FEA9C2A23CE39007B86F5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
