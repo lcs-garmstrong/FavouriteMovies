@@ -43,30 +43,7 @@ struct AddMovieView: View {
                 .toolbar {
                     ToolbarItem(placement: .primaryAction) {
                         Button(action: {
-                            // Write to database
-                            Task {
-                                try await db!.transaction { core in
-                                    try core.query("""
-                                            INSERT INTO movie (
-                                                name,
-                                                genre,
-                                                rating
-                                            )
-                                            VALUES (
-                                                (?),
-                                                (?),
-                                                (?)
-                                            )
-                                            """,
-                                                   name,
-                                                   genre,
-                                                   rating)
-                                }
-                                // Reset input fields after writing to database
-                                name = ""
-                                genre = ""
-                                rating = 3
-                            }
+                          addMovie()
                         }, label: {
                             Text("Add")
                         })
@@ -75,6 +52,34 @@ struct AddMovieView: View {
                 
                 Spacer()
             }
+        }
+    }
+    
+    // MARK: Functions
+    func addMovie() {
+        // Write to database
+        Task {
+            try await db!.transaction { core in
+                try core.query("""
+                        INSERT INTO movie (
+                            name,
+                            genre,
+                            rating
+                        )
+                        VALUES (
+                            (?),
+                            (?),
+                            (?)
+                        )
+                        """,
+                               name,
+                               genre,
+                               rating)
+            }
+            // Reset input fields after writing to database
+            name = ""
+            genre = ""
+            rating = 3
         }
     }
 }
