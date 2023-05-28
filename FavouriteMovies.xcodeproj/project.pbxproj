@@ -15,6 +15,7 @@
 		971FEAAF2A23D221007B86F5 /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971FEAAE2A23D221007B86F5 /* MovieItemView.swift */; };
 		971FEAB22A23D868007B86F5 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 971FEAB12A23D868007B86F5 /* Blackbird */; };
 		971FEAB52A23ED5C007B86F5 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971FEAB42A23ED5C007B86F5 /* AppDatabase.swift */; };
+		971FEAB72A23EDA8007B86F5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971FEAB62A23EDA8007B86F5 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		971FEAAC2A23D007007B86F5 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 		971FEAAE2A23D221007B86F5 /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
 		971FEAB42A23ED5C007B86F5 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		971FEAB62A23EDA8007B86F5 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				971FEAAC2A23D007007B86F5 /* db.sqlite */,
+				971FEAB62A23EDA8007B86F5 /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				971FEA982A23CE37007B86F5 /* FavouriteMoviesApp.swift in Sources */,
 				971FEAB52A23ED5C007B86F5 /* AppDatabase.swift in Sources */,
 				971FEAA92A23CEB9007B86F5 /* MoviesListView.swift in Sources */,
+				971FEAB72A23EDA8007B86F5 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
